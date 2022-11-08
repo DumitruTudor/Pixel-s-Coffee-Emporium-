@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Shopping Cart</title>
+    </head>
     <body>
-        <head>
-            <title>Buy Coffee</title>
-        </head>
-        <h2>Available Coffee:</h2>
-        <button type="button" nponclick="history.back()">Go back</button>
-        <hr>
-        <em>Coffee 1: 15$</em>
-        <button type="button">Add to cart</button>
-        <br>
-        <em>Coffee 2: 5$</em>
-        <button type="button">Add to cart</button>
-        <script src="index.js"></script>
+        <header>
+            <div class = "overlay"></div>
+            <nav>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class = "cart">
+                        <a href="cart.html">
+                            <ion-icon name="basket-outline"></ion-icon>Cart<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
